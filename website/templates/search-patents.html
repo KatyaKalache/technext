@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    </head>
+    <body>
+        <div>
+            <h1>
+                Search patent number
+            </h1>
+            <form method=POST>
+                {% csrf_token %}
+                <input type='search' placeholder='Enter keyword..' name="searched">
+                <button class="btn btn-outline-secondary" type="submit">Search</button>
+                {% if searched %}
+                    <h1>You searched for {{ searched }}</h1>
+                {% endif %}
+                <ul>
+                    {% for patent in patents %}
+                        <li>{{ patent.patent_id }}</li>
+                    {% endfor %}
+                </ul>
+            </form>
+        </div>
+        
+    </body>
+</html>
