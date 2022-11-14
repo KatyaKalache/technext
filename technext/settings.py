@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-640zcbj3l^im@_g@omy&enm1x$2&q(5z&_tscp56myjrx6=rf=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['35.90.218.77']
 
 
 # Application definition
@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'technext.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'technext_test',
-        'USER': 'root',
-        'PASSWORD': 'root',
+        'NAME': 'technext',
+        'USER': 'admin',
+        'PASSWORD': 'admin',
     }
 }
 
